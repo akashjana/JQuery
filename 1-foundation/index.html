@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <p id="notSuper">This is a sentence</p>
+      <p class="super">Here's another one</p>
+      <h4 class="super">Don't forget this one!</h4>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script>
+      // $("p").hide();
+      $("p").addClass("colorful timestwo");
+      $("p").removeClass("colorful");
+      $("p.super,h4.super").addClass("colorful");
+      $(".super").addClass("timestwo");
+      $("p#notSuper").removeClass("timestwo");
+    </script>
+  </body>
+</html>
